@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   List<Map<String, dynamic>> books = [];
   // Remove hasFetched and always fetch on init
-  final String apiUrl = 'http://192.168.192.170:3000/api/books'; // <-- UPDATE THIS IP
+  final String apiUrl = 'http://192.168.195.254:3000/api/books'; // <-- UPDATE THIS IP
 
   Future<void> fetchBooks() async {
     final response = await http.get(Uri.parse(apiUrl));
@@ -83,7 +83,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         leading: const Icon(Icons.science, color: Colors.white, size: 32),
-        title: const Text('Mini Flutter App Overview', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
+        title: const Text('My Book App', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white)),
         centerTitle: true,
         backgroundColor: Colors.teal,
         actions: [

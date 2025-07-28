@@ -16,7 +16,7 @@ class _AddBookPageState extends State<AddBookPage> {
   bool _isLoading = false;
 
   // Change this to your computer's local IP address if running on a device/emulator
-  final String apiUrl = 'http://192.168.192.170:3000/api/books'; // <-- UPDATE THIS IP
+  final String apiUrl = 'http://192.168.195.254:3000/api/books'; // <-- UPDATE THIS IP
 
   Future<void> _submitBook() async {
     setState(() { _isLoading = true; });

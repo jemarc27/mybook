@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.tite"
+    namespace = "com.example.book"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
